@@ -1,0 +1,71 @@
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out;
+}
+
+/* PDF-specific styles */
+@media print {
+  .pdf-header {
+    display: block !important;
+  }
+
+  .page-break-avoid {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+}
+
+
+
+
+
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.react-datepicker__header {
+  background: #fffaf5;
+  border-bottom: 1px solid #fff1e6;
+  border-radius: 1rem 1rem 0 0;
+  padding-top: 1rem;
+}
+
+.react-datepicker__day--selected {
+  background-color: #f97316 !important;
+  color: white !important;
+  border-radius: 0.5rem;
+}
+
+.react-datepicker__day:hover {
+  background-color: #fff7ed;
+  border-radius: 0.5rem;
+}
